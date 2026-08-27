@@ -1,6 +1,6 @@
 # Portafolio — Jose (versión HTML / CSS / JavaScript)
 
-La misma versión del portafolio que hicimos con Next.js, pero construida con **HTML, CSS y JavaScript puro** (sin frameworks, sin paso de compilación), organizada en **módulos** — cada sección es su propio archivo, igual que los componentes `.tsx` de la versión Next.
+Construida con **HTML, CSS y JavaScript puro** (sin frameworks, sin paso de compilación), organizada en **módulos** — cada sección es su propio archivo.
 
 ## Cómo correrlo
 
