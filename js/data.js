@@ -115,6 +115,15 @@ export const mentors = [
       "Un capo total de las matemáticas. Logró que las derivadas y las integrales no parecieran una pesadilla sino un reto emocionante. De esos profes con carisma y paciencia de sobra, que te enseñan a pensar con lógica pura y le meten la mejor onda a cada clase.",
     tag: "Cálculo 1 & Lógica",
   },
+  {
+    name: "Joseph Ballón",
+    role: "Director de Carrera de IT & Sistemas",
+    university: "Universidad ESAN",
+    image: "images/profesor-joseph-ballon.jpg",
+    quote:
+      "El mentor clave en la ruta del software. Quien nos formó desde Fundamentos de Programación y Bases de Datos hasta Programación Orientada a Objetos. Transmite liderazgo, exigencia y esa visión clara que todo futuro ingeniero necesita.",
+    tag: "POO, BD & Dirección",
+  },
 ];
 
 export const nav = [
