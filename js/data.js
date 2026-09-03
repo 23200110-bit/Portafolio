@@ -105,9 +105,22 @@ export const services = [
   },
 ];
 
+export const mentors = [
+  {
+    name: "Miguel Meza",
+    role: "Profesor de Cálculo 1",
+    university: "Universidad ESAN",
+    image: "images/profesor-miguel-meza.jpg",
+    quote:
+      "Un capo total de las matemáticas. Logró que las derivadas y las integrales no parecieran una pesadilla sino un reto emocionante. De esos profes con carisma y paciencia de sobra, que te enseñan a pensar con lógica pura y le meten la mejor onda a cada clase.",
+    tag: "Cálculo 1 & Lógica",
+  },
+];
+
 export const nav = [
   { id: "inicio", label: "Inicio", icon: "home" },
   { id: "acerca", label: "Acerca", icon: "user" },
   { id: "proyectos", label: "Proyectos", icon: "folder" },
   { id: "servicios", label: "Servicios", icon: "wrench" },
 ];
+
