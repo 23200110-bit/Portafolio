@@ -1,4 +1,5 @@
-import { profile, experience, skills } from "../data.js";
+import { profile, experience, skills, mentors } from "../data.js";
+
 
 export function renderAbout() {
   const el = document.getElementById("acerca");
@@ -25,6 +26,34 @@ export function renderAbout() {
         <p class="about-block-title">Intereses Profesionales</p>
         <div class="skills-list">
           ${profile.interests.map((i) => `<span class="skill-pill">${i}</span>`).join("")}
+        </div>
+      </div>`
+    : "";
+
+  const mentorsHtml = mentors && mentors.length
+    ? `
+      <div class="about-block">
+        <p class="about-block-title">Profesores Destacados</p>
+        <div class="mentor-cards">
+          ${mentors
+            .map(
+              (m) => `
+            <div class="mentor-card">
+              <div class="mentor-avatar">
+                <img src="${m.image}" alt="${m.name}" />
+              </div>
+              <div class="mentor-content">
+                <div class="mentor-header">
+                  <h4 class="mentor-name">${m.name}</h4>
+                  <span class="mentor-tag">${m.tag}</span>
+                </div>
+                <p class="mentor-role">${m.role} <span style="color:rgba(23,24,28,0.4)">— ${m.university}</span></p>
+                <p class="mentor-quote">"${m.quote}"</p>
+              </div>
+            </div>
+          `
+            )
+            .join("")}
         </div>
       </div>`
     : "";
@@ -58,6 +87,8 @@ export function renderAbout() {
         </div>
 
         ${interestsHtml}
+
+        ${mentorsHtml}
       </div>
     </div>
   `;
